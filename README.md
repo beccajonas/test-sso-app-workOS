@@ -19,7 +19,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 
    ```bash
    # SSH
-   $ git clone git@github.com:workos/python-flask-example-applications.git
+   $ git clone git@github.com:beccajonas/test-sso-app-workOS.git
    ```
 
 2. Navigate to the sso app within the cloned repo.
