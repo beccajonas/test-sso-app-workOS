@@ -42,7 +42,6 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
    - Your [SSO-specific, WorkOS Client ID](https://dashboard.workos.com/configuration)
 
 <img width="1556" height="554" alt="Work OS Dashboard" src="https://github.com/user-attachments/assets/f15bf0b3-b360-4f49-a809-83a7467fac86" />
-<br></br>
 
 5.  Create a `.env` file to securely store the environment variables. Open this file with the Nano text editor. (This file is listed in this repo's `.gitignore` file, so your sensitive information will not be checked into version control.)
 
