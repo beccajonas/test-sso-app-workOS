@@ -22,13 +22,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
    $ git clone git@github.com:beccajonas/test-sso-app-workOS.git
    ```
 
-2. Navigate to the sso app within the cloned repo.
-
-   ```bash
-   $ cd python-flask-example-applications/python-flask-sso-example
-   ```
-
-3. Create and source a Python virtual environment. You should then see `(env)` at the beginning of your command-line prompt.
+2. Create and source a Python virtual environment. You should then see `(env)` at the beginning of your command-line prompt.
 
    ```bash
    $ python3 -m venv env
@@ -36,25 +30,25 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
    (env) $
    ```
 
-4. Install the cloned app's dependencies.
+3. Install the cloned app's dependencies.
 
    ```bash
    (env) $ pip install -r requirements.txt
    ```
 
-5. Obtain and make note of the following values. In the next step, these will be set as environment variables.
+4. Obtain and make note of the following values. In the next step, these will be set as environment variables.
 
    - Your [WorkOS API key](https://dashboard.workos.com/api-keys)
    - Your [SSO-specific, WorkOS Client ID](https://dashboard.workos.com/configuration)
 
-6. Ensure you're in the root directory for the example app, `python-flask-sso-example/`. Create a `.env` file to securely store the environment variables. Open this file with the Nano text editor. (This file is listed in this repo's `.gitignore` file, so your sensitive information will not be checked into version control.)
+5.  Create a `.env` file to securely store the environment variables. Open this file with the Nano text editor. (This file is listed in this repo's `.gitignore` file, so your sensitive information will not be checked into version control.)
 
    ```bash
    (env) $ touch .env
    (env) $ nano .env
    ```
 
-7. Once the Nano text editor opens, you can directly edit the `.env` file by listing the environment variables:
+6. Once the Nano text editor opens, you can directly edit the `.env` file by listing the environment variables:
 
    ```bash
    WORKOS_API_KEY=<value found in step 6>
@@ -64,7 +58,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 
    To exit the Nano text editor, type `CTRL + x`. When prompted to "Save modified buffer", type `Y`, then press the `Enter` or `Return` key.
 
-8. Source the environment variables so they are accessible to the operating system.
+7. Source the environment variables so they are accessible to the operating system.
 
    ```bash
    (env) $ source .env
@@ -77,7 +71,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
    (env) $ echo $WORKOS_CLIENT_ID
    ```
 
-9. In `python-flask-sso-example/app.py` change the `CUSTOMER_ORGANIZATION_ID` string value to the organization you will be testing the login for. This can be found in your WorkOS Dashboard.
+8. In `app.py` change the `CUSTOMER_ORGANIZATION_ID` string value to the organization you will be testing the login for. This can be found in your WorkOS Dashboard.
 
 10. The final setup step is to start the server.
 
@@ -127,7 +121,3 @@ $ source env/bin/activate
 Once running, navigate to `localhost:5000`, or `localhost:5001` depending on which port you launched the server, to test out the SSO workflow.
 
 Hooray!
-
-## Need help?
-
-If you get stuck and aren't able to resolve the issue by reading our API reference or tutorials, you can reach out to us at support@workos.com and we'll lend a hand.
