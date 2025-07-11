@@ -22,7 +22,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
    $ git clone git@github.com:beccajonas/test-sso-app-workOS.git
    ```
 
-2. Create and source a Python virtual environment. You should then see `(env)` at the beginning of your command-line prompt.
+2. Enter the repo and create and source a Python virtual environment. You should then see `(env)` at the beginning of your command-line prompt.
 
    ```bash
    $ python3 -m venv env
