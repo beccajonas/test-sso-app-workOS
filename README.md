@@ -40,7 +40,9 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 
    - Your [WorkOS API key](https://dashboard.workos.com/api-keys)
    - Your [SSO-specific, WorkOS Client ID](https://dashboard.workos.com/configuration)
+   - 
 <img width="1556" height="554" alt="Work OS Dashboard" src="https://github.com/user-attachments/assets/f15bf0b3-b360-4f49-a809-83a7467fac86" />
+
 
 5.  Create a `.env` file to securely store the environment variables. Open this file with the Nano text editor. (This file is listed in this repo's `.gitignore` file, so your sensitive information will not be checked into version control.)
 
@@ -71,8 +73,14 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
    (env) $ echo $WORKOS_API_KEY
    (env) $ echo $WORKOS_CLIENT_ID
    ```
+   <img width="1093" height="362" alt=".env file" src="https://github.com/user-attachments/assets/6952ec51-9588-423e-ba34-bd56cf6153d8" />
+
 
 8. In `app.py` change the `CUSTOMER_ORGANIZATION_ID` string value to the organization you will be testing the login for. This can be found in your WorkOS Dashboard.
+
+<img width="874" height="430" alt="WORKOS dashboard org ID" src="https://github.com/user-attachments/assets/368893eb-afc7-42ed-9ef0-a0fff098cefc" />
+
+<img width="985" height="446" alt="app.py org ID" src="https://github.com/user-attachments/assets/fa3cbeba-765d-4dab-88b4-fbd7fef8cffe" />
 
 10. The final setup step is to start the server.
 
