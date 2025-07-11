@@ -108,14 +108,6 @@ Navigate to `localhost:5000`, or `localhost:5001` depending on which port you la
 
 You can stop the local Flask server for now by entering `CTRL + c` on the command line.
 
-## SSO Setup with WorkOS
-
-Follow the [SSO authentication flow instructions](https://workos.com/docs/sso/guide/introduction) to set up an SSO connection.
-
-When you get to the step where you provide the `REDIRECT_URI` value, use http://localhost:5000/auth/callback.
-
-If you get stuck, please reach out to us at support@workos.com so we can help.
-
 ## Testing the Integration
 
 10. Naviagte to the `python-flask-sso-example` directory. Source the virtual environment we created earlier, if it isn't still activated from the steps above. Start the Flask server locally.
