@@ -120,6 +120,6 @@ $ source env/bin/activate
 
 11. Click Enterprise SAML and fill out the form. Use `@example.com` for the email domain. See successful login.
 
-https://www.loom.com/share/94c2c414d25545309fe396a6dff609a2
+https://www.loom.com/share/244a9f78d146441099c6b7e78970f2f1?sid=e0226e0d-feaa-411d-bd19-af0327098825
 
 
