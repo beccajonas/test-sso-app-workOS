@@ -54,8 +54,8 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 6. Once the Nano text editor opens, you can directly edit the `.env` file by listing the environment variables:
 
    ```bash
-   WORKOS_API_KEY=<value found in step 6>
-   WORKOS_CLIENT_ID=<value found in step 6>
+   WORKOS_API_KEY=<value found in step 4>
+   WORKOS_CLIENT_ID=<value found in step 4>
    APP_SECRET_KEY=<any string value you\'d like>
    ```
 
