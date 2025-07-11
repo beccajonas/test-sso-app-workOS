@@ -104,7 +104,7 @@ Use a production WSGI server instead.
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Navigate to `localhost:5000`, or `localhost:5001` depending on which port you launched the server, in your web browser. You should see a "Login" button. If you click this link, you'll be redirected to an HTTP `404` page because we haven't set up SSO yet!
+Navigate to `localhost:5000`, `http://127.0.0.1:5000/` or `localhost:5001` depending on which port you launched the server, in your web browser. You should see a "Login" button. If you click this link, you'll be redirected to an HTTP `404` page because we haven't set up SSO yet!
 
 You can stop the local Flask server for now by entering `CTRL + c` on the command line.
 
@@ -118,6 +118,8 @@ $ source env/bin/activate
 (env) $ flask run
 ```
 
-Once running, navigate to `localhost:5000`, or `localhost:5001` depending on which port you launched the server, to test out the SSO workflow.
+11. Click Enterprise SAML and fill out the form. Use `@example.com` for the email domain. See successful login.
 
-Hooray!
+https://www.loom.com/share/94c2c414d25545309fe396a6dff609a2
+
+
