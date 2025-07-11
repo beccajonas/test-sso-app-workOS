@@ -59,7 +59,7 @@ def auth():
         )
     )
 
-    print("Authorization URL:", authorization_url) 
+    # print("Authorization URL:", authorization_url) 
     return redirect(authorization_url)
 
 
