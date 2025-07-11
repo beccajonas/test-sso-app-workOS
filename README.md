@@ -39,7 +39,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 4. Obtain and make note of the following values. In the next step, these will be set as environment variables.
 
    - Your [WorkOS API key](https://dashboard.workos.com/api-keys)
-   - Your [SSO-specific, WorkOS Client ID](https://dashboard.workos.com/configuration)
+   - Your [SSO-specific, WorkOS Client ID](https://dashboard.workos.com/api-keys)
 
 <img width="1556" height="554" alt="Work OS Dashboard" src="https://github.com/user-attachments/assets/f15bf0b3-b360-4f49-a809-83a7467fac86" />
 
