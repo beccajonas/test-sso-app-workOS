@@ -12,7 +12,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 
    ```bash
    # HTTPS
-   $ git clone https://github.com/workos/python-flask-example-applications.git
+   $ git clone https://github.com/beccajonas/test-sso-app-workOS.git
    ```
 
    or
