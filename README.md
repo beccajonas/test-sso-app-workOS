@@ -41,7 +41,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
    - Your [WorkOS API key](https://dashboard.workos.com/api-keys)
    - Your [SSO-specific, WorkOS Client ID](https://dashboard.workos.com/api-keys)
 
-<img width="1556" height="554" alt="Work OS Dashboard" src="https://github.com/user-attachments/assets/f15bf0b3-b360-4f49-a809-83a7467fac86" />
+   <img width="1556" height="554" alt="Work OS Dashboard" src="https://github.com/user-attachments/assets/f15bf0b3-b360-4f49-a809-83a7467fac86" />
 
 
 5.  Create a `.env` file to securely store the environment variables. Open this file with the Nano text editor. (This file is listed in this repo's `.gitignore` file, so your sensitive information will not be checked into version control.)
@@ -77,11 +77,21 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 
 8. In `app.py` change the `CUSTOMER_ORGANIZATION_ID` string value to the organization you will be testing the login for. In this scenario, use the Test Organization from your WorkOS Dashboard.
    
-<img width="874" height="430" alt="WORKOS dashboard org ID" src="https://github.com/user-attachments/assets/368893eb-afc7-42ed-9ef0-a0fff098cefc" />
+   <img width="874" height="430" alt="WORKOS dashboard org ID" src="https://github.com/user-attachments/assets/368893eb-afc7-42ed-9ef0-a0fff098cefc" />
 
-<img width="985" height="446" alt="app.py org ID" src="https://github.com/user-attachments/assets/fa3cbeba-765d-4dab-88b4-fbd7fef8cffe" />
+   <img width="985" height="446" alt="app.py org ID" src="https://github.com/user-attachments/assets/fa3cbeba-765d-4dab-88b4-fbd7fef8cffe" />
 
-9. The final setup step is to start the server.
+9. Head back to your WorkOS Dahsboard and navigate to the `Redirects` tab on the left side column. Add the following redirects to make sure whatever port/URL you use, you get successfully redirected. 
+
+   <img width="1006" height="562" alt="Screenshot 2025-07-11 at 2 24 54 PM" src="https://github.com/user-attachments/assets/d93b6aea-3318-42e6-b22a-c789f16cf367" />
+
+   ```bash
+      http://localhost:5001/auth/callback
+      http://127.0.0.1:5000/auth/callback
+      http://localhost:5000/auth/callback
+   ```
+
+10. The final setup step is to start the server.
 
 ```bash
 (env) $ flask run
@@ -104,13 +114,13 @@ Use a production WSGI server instead.
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Navigate to `localhost:5000`, `http://127.0.0.1:5000/` or `localhost:5001` depending on which port you launched the server, in your web browser. You should see a "Login" button. If you click this link, you'll be redirected to an HTTP `404` page because we haven't set up SSO yet!
+Navigate to `localhost:5000`, `http://127.0.0.1:5000/` or `localhost:5001` depending on which port you launched the server, in your web browser.
 
 You can stop the local Flask server for now by entering `CTRL + c` on the command line.
 
 ## Testing the Integration
 
-10. Naviagte to the `python-flask-sso-example` directory. Source the virtual environment we created earlier, if it isn't still activated from the steps above. Start the Flask server locally.
+11. Naviagte to the `python-flask-sso-example` directory. Source the virtual environment we created earlier, if it isn't still activated from the steps above. Start the Flask server locally.
 
 ```bash
 $ cd ~/Desktop/python-flask-sso-example/
